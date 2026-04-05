@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
 
 :root {
-    --bg-color: #09090b; /* Very dark zinc */
-    --text-primary: #fafafa;
-    --text-secondary: #a1a1aa;
-    --accent-glow: rgba(99, 102, 241, 0.15);
-    --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --card-border: rgba(255, 255, 255, 0.08);
+    --bg-color: #021a0c; /* Very dark green/black */
+    --text-primary: #f0fdf4;
+    --text-secondary: #86efac;
+    --accent-glow: rgba(34, 197, 94, 0.15);
+    --accent-gradient: linear-gradient(135deg, #22c55e 0%, #10b981 50%, #14b8a6 100%);
+    --card-bg: rgba(255, 255, 255, 0.04);
+    --card-border: rgba(34, 197, 94, 0.15);
     --nav-height: 80px;
 }
 
@@ -184,11 +184,11 @@ p {
 .btn-primary {
     background: var(--accent-gradient);
     color: white;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
     transform: translateY(-2px);
 }
 
@@ -279,7 +279,7 @@ p {
 
 .form-control:focus {
     outline: none;
-    border-color: #a855f7;
+    border-color: #10b981;
     background: rgba(0, 0, 0, 0.4);
 }
 
