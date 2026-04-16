@@ -1,68 +1,249 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | 최시원</title>
-    <meta name="description" content="시야를 바꾸는 축구 인사이트와 전술 분석. 최시원의 프리미엄 축구 블로그입니다.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <a href="index.html" class="logo">Siwon.Insight</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html" class="active">Contact</a>
-        </div>
-    </nav>
-    <main>
-        <div class="content-section fade-in">
-            <h2 style="text-align: center; margin-bottom: 4rem;"><span class="text-gradient">Get In Touch</span></h2>
-            
-            <div class="contact-wrapper glass-card">
-                <div class="contact-info-card fade-in delay-1">
-                    <h3 style="margin-bottom: 2rem; font-size: 1.8rem; letter-spacing: -0.5px;">Let's Talk Football.</h3>
-                    <p style="margin-bottom: 3rem; font-size: 1.05rem;">데이터 분석 의뢰, 칼럼 기고 제안부터 단순한 매치 리뷰 토론이나 직관 메이트까지. 축구와 관련된 모든 창의적인 논의와 협업을 환영합니다.</p>
-                    
-                    <div class="info-item">
-                        <h4>Direct Email</h4>
-                        <p>tactics.siwon@example.com</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <h4>Social Presence</h4>
-                        <p style="font-weight: 300;">
-                            <a href="#" style="color: var(--text-primary); text-decoration: none; border-bottom: 1px solid #d4af37; margin-right: 1rem; padding-bottom: 2px;">Twitter / X</a>
-                            <a href="#" style="color: var(--text-primary); text-decoration: none; border-bottom: 1px solid #d4af37; padding-bottom: 2px;">LinkedIn (Analytics)</a>
-                        </p>
-                    </div>
-                </div>
 
-                <div class="fade-in delay-2">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name / Organization</label>
-                            <input type="text" id="name" class="form-control" placeholder="YOUR NAME" required autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="YOUR@EMAIL.COM" required autocomplete="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject / Purpose</label>
-                            <input type="text" id="subject" class="form-control" placeholder="e.g., Data Analysis Collab, Column Request" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="How can we collaborate on the pitch?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Send Inquiry</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
-</body>
-</html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MUFC Analytics | Carrington Base</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-primary-container": "#fff5f3",
+                    "primary-container": "#da291c",
+                    "inverse-primary": "#be0f09",
+                    "on-tertiary-container": "#f6f7f7",
+                    "on-surface": "#e5e2e1",
+                    "on-primary-fixed": "#410000",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "surface": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-highest": "#353534",
+                    "outline": "#ac8883",
+                    "secondary-container": "#474746",
+                    "secondary": "#c8c6c5",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-secondary": "#303030",
+                    "secondary-fixed": "#e5e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary": "#690000",
+                    "surface-tint": "#ffb4a8",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-dim": "#131313",
+                    "tertiary-container": "#707171",
+                    "background": "#131313",
+                    "surface-variant": "#353534",
+                    "outline-variant": "#5c403b",
+                    "tertiary": "#c6c6c7",
+                    "primary": "#ffb4a8",
+                    "inverse-on-surface": "#313030",
+                    "surface-container": "#201f1f",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-tertiary": "#2f3131",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-background": "#e5e2e1",
+                    "surface-bright": "#3a3939",
+                    "on-surface-variant": "#e6bdb7",
+                    "on-secondary-container": "#b7b5b4",
+                    "error-container": "#93000a",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary-fixed-variant": "#930001",
+                    "tertiary-fixed": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0e0e;
+            font-family: 'Manrope', sans-serif;
+            color: #e5e2e1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-overlay {
+            background: rgba(19, 19, 19, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-xl shadow-[0px_24px_48px_rgba(0,0,0,0.4)] bg-gradient-to-b from-[#1c1b1b] to-transparent">
+<div class="flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#DA291C] active:scale-95 transition-transform cursor-pointer">menu</span>
+<h1 class="font-['Manrope'] text-[#e5e2e1] uppercase tracking-widest font-bold text-lg">MUFC ANALYTICS</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/20 active:scale-95 transition-transform cursor-pointer">
+<img alt="User Avatar" data-alt="Close up portrait of a professional sports analyst in dark apparel against a muted studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIM1hlv5dJVgGKXdar4dLC8LjzpFR6E7cUgNqelM5JT2loLYWV6iW7jQKarkatDCvym7Kj15dFvMdc2B__k36TjcT15HZPENKp_PSVmXk1R5DiqZZbd9VWElvujFYQ30b1PusaV8IFUB7KXGHmha4MV5HiuqDbzF-Hl1P2LFXTunqCK1_jrkpQ9_m6wHjTdm2jyFL-vapVuPQdS1kon8bo0cZTFIkor6YrZU7nqQ46xEmn8zPdkp6P9M85mMB0Ow1GjXcXf8e4Cmg"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section Asymmetric -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-end">
+<div class="lg:col-span-7">
+<p class="text-[#DA291C] font-bold tracking-[0.3em] uppercase text-sm mb-4">Tactical Headquarters</p>
+<h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mb-6">
+                    Join the <span class="text-[#DA291C] italic">United</span> <br/>Analytics Base
+                </h2>
+<p class="text-on-surface-variant body-md max-w-xl leading-relaxed">
+                    Collaborate with the elite intelligence unit at Carrington. We process high-fidelity match data to drive the next generation of football dominance.
+                </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-video lg:aspect-square rounded-xl overflow-hidden shadow-2xl relative group">
+<img class="w-full h-full object-cover grayscale brightness-50 group-hover:scale-110 transition-transform duration-700" data-alt="Monochromatic high-contrast architectural view of a modern sports training facility at dusk with sleek lines and glass surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpz0qv0_pEHoWYA9mj-3CrulpipY1q4aUx0imfMF5MQGE9USd7FBzOH2mqDkw1ZOlx6sQwPJla88jIhdfhLkLU7UP04nDTy4kLkOfTDZ6Rz4fv3wuLzFDPKtdsQR_coaFNukpWy2ko0CasYUf_W_Nt_uNJWd0-eQJMWvvTQc9rzmvhTYwgOFvPOmMPADlUcEmxevzcpvat3-HdXrVM75y2vjce4MS8bR2LV-c43KrHHr8tI9cy0PUXp7aSJgPOUISJU2evrksj9A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<p class="text-xs font-bold tracking-widest text-[#DA291C] uppercase">Training Center</p>
+<p class="text-xl font-bold">CARRINGTON BASE</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Request Intel Form (Spans 2 columns) -->
+<div class="md:col-span-2 bg-surface-container rounded-xl p-8 border border-outline-variant/10">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-1.5 h-6 bg-[#DA291C]"></div>
+<h3 class="text-2xl font-bold tracking-tight">REQUEST INTEL</h3>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#DA291C] text-sm text-on-surface placeholder:text-on-surface-variant/30 transition-all" placeholder="OPERATIVE NAME" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Organization</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#DA291C] text-sm text-on-surface placeholder:text-on-surface-variant/30 transition-all" placeholder="ENTITY / CLUB" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Analysis Type</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#DA291C] text-sm text-on-surface transition-all appearance-none">
+<option>Tactical Scouting</option>
+<option>XG Modeling &amp; Advanced Metrics</option>
+<option>Player Performance Index</option>
+<option>Opposition Weakness Mapping</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Inquiry Details</label>
+<textarea class="w-full bg-surface-container-lowest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#DA291C] text-sm text-on-surface placeholder:text-on-surface-variant/30 transition-all resize-none" placeholder="DESCRIBE THE SCOPE OF COLLABORATION..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-4 rounded-xl active:scale-95 transition-all shadow-lg hover:brightness-110 flex items-center justify-center gap-2">
+                        TRANSMIT REQUEST
+                        <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+<!-- Location & Contact Stats -->
+<div class="space-y-6">
+<!-- Location Card -->
+<div class="bg-surface-container-high rounded-xl p-8 border border-outline-variant/10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-7xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h3 class="text-xs font-bold tracking-[0.2em] text-[#DA291C] uppercase mb-4">Location</h3>
+<p class="text-2xl font-black mb-1">CARRINGTON</p>
+<p class="text-on-surface-variant text-sm mb-6">Manchester, United Kingdom</p>
+<div class="aspect-square w-full rounded-lg grayscale border border-outline-variant/20 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-50" data-alt="Stylized top-down satellite map view of an urban sports complex with grid-like structures in high contrast black and white" data-location="Carrington, Manchester" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYVP378rdsH6y7MXUxWLhBOth_aBvGl56jfoTzzJYiXnbAsosuTkZTadFd9W8ahU9Kzw71AiTJtMncpGmL-gijeEXbx1BObwuuGlJjqhl5z6d7Kiw7z0oLIPkFfAFtX2d5egK4z5GoutJ4pOEzhHU7VAuVS49jru1PAbb9f-8ncGQbW-9oI6caGibYXVm1aj3pTnF_xOFGYF6Jn-vwg7B-zq4qWN8aPJB5Vplvsp9slLh9zJQAQ3weYDAqclazbq3uMZ1Mw3hTSYc"/>
+</div>
+</div>
+<!-- Live Pulse Card -->
+<div class="bg-[#DA291C] rounded-xl p-6 text-on-primary-container shadow-xl">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined">sensors</span>
+<span class="bg-white/20 px-2 py-0.5 rounded text-[10px] font-bold">LIVE STATUS</span>
+</div>
+<p class="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">System Load</p>
+<div class="text-4xl font-black italic mb-4">84.2%</div>
+<div class="h-1 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-white w-4/5 animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Detail Row -->
+<section class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="flex gap-4 p-4 hover:bg-surface-container transition-colors rounded-xl border border-transparent hover:border-outline-variant/10 group">
+<span class="material-symbols-outlined text-[#DA291C] text-3xl">verified_user</span>
+<div>
+<h4 class="font-bold mb-1 group-hover:text-[#DA291C] transition-colors">Secure Channels</h4>
+<p class="text-sm text-on-surface-variant">All communications are encrypted via end-to-end tactical protocols.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 hover:bg-surface-container transition-colors rounded-xl border border-transparent hover:border-outline-variant/10 group">
+<span class="material-symbols-outlined text-[#DA291C] text-3xl">speed</span>
+<div>
+<h4 class="font-bold mb-1 group-hover:text-[#DA291C] transition-colors">Rapid Response</h4>
+<p class="text-sm text-on-surface-variant">Intel requests are typically processed within 12 standard tactical hours.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 hover:bg-surface-container transition-colors rounded-xl border border-transparent hover:border-outline-variant/10 group">
+<span class="material-symbols-outlined text-[#DA291C] text-3xl">hub</span>
+<div>
+<h4 class="font-bold mb-1 group-hover:text-[#DA291C] transition-colors">Global Network</h4>
+<p class="text-sm text-on-surface-variant">Connecting Carrington with the brightest analytic minds worldwide.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 pb-safe bg-[#0e0e0e]/90 backdrop-blur-2xl rounded-t-xl border-t border-[#5c403b]/20 shadow-[0px_-12px_32px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col items-center justify-center text-[#e6bdb7] opacity-50 hover:text-[#DA291C] hover:opacity-100 transition-all cursor-pointer active:scale-90">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-tight">Tactics</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6bdb7] opacity-50 hover:text-[#DA291C] hover:opacity-100 transition-all cursor-pointer active:scale-90">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-tight">Squad</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6bdb7] opacity-50 hover:text-[#DA291C] hover:opacity-100 transition-all cursor-pointer active:scale-90">
+<span class="material-symbols-outlined">sensors_krx</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-tight">Live</span>
+</div>
+<!-- ACTIVE: Insights -->
+<div class="flex flex-col items-center justify-center text-[#DA291C] bg-[#DA291C]/10 rounded-xl px-3 py-1 cursor-pointer active:scale-90 transition-transform">
+<span class="material-symbols-outlined">science</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-tight">Insights</span>
+</div>
+</nav>
+</body></html>
